@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-brand-red: #d63227;
+}
+
+/* 🔥 GLOBAL FONT OVERRIDE + BRAND RED */
+@theme inline {
+  --font-sans: var(--font-inter);
+  /* Brand red: #d63227 */
+  --color-red-50: #fef2f2;
+  --color-red-100: #fde8e8;
+  --color-red-200: #fbd5d4;
+  --color-red-300: #f8b4b2;
+  --color-red-400: #f38784;
+  --color-red-500: #d63227;
+  --color-red-600: #d63227;
+  --color-red-700: #d63227;
+  --color-red-800: #99231c;
+  --color-red-900: #7d1d18;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+ 
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
