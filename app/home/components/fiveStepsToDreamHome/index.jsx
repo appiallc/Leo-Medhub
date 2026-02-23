@@ -88,7 +88,7 @@ export default function FiveStepsToDreamHome() {
   }, []);
 
   return (
-    <section className="w-full px-6 md:px-12 lg:px-24 py-16 bg-gray-100">
+    <section className="w-full overflow-x-hidden px-6 md:px-12 lg:px-24 py-16 bg-gray-100">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
