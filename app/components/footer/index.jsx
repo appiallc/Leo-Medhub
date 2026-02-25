@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#293675] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {/* Logo & Contact */}
           <div className="space-y-4">
@@ -57,40 +57,29 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm cursor-pointer">
-              <li>
-                <Link href="#" className="hover:underline">
-                  Medical Billing Service
-                </Link>
-              </li>
-              <li>
-                 <Link href="#" className="hover:underline">
-                  Medical Coding Service
-                </Link></li>
-              <li>
-                <Link href="#" className="hover:underline">
-                 Revenue Cycle Management
-                </Link></li>
-              <li>
-                <Link href="#" className="hover:underline">
-                Credentialing
-                </Link></li>
-              <li>
-                 <Link href="#" className="hover:underline">
-             Fax Management
-                </Link></li>
-              <li>
-                <Link href="#" className="hover:underline">
-             Medical Biller
-                </Link>
-                </li>
-              <li>
-                <Link href="#" className="hover:underline">
-            Medical Records
-                </Link></li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2">
+              <ul className="space-y-2 text-sm">
+                <li><Link href="#" className="hover:underline">Medical Billing Services</Link></li>
+                <li><Link href="#" className="hover:underline">Credentialing</Link></li>
+                <li><Link href="#" className="hover:underline">Eligibility & Benefits</Link></li>
+                <li><Link href="#" className="hover:underline">Fax Management</Link></li>
+                <li><Link href="#" className="hover:underline">Medical Biller</Link></li>
+                <li><Link href="#" className="hover:underline">Medical Coding</Link></li>
+                <li><Link href="#" className="hover:underline">Medical Records</Link></li>
+                <li><Link href="#" className="hover:underline">Virtual Healthcare Assistant</Link></li>
+              </ul>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="#" className="hover:underline">New Patient Coordinator</Link></li>
+                <li><Link href="#" className="hover:underline">Phone Receptionist</Link></li>
+                <li><Link href="#" className="hover:underline">Prescription Coordinator</Link></li>
+                <li><Link href="#" className="hover:underline">Prior Authorizations</Link></li>
+                <li><Link href="#" className="hover:underline">Referral Management</Link></li>
+                <li><Link href="#" className="hover:underline">Revenue Cycle Management</Link></li>
+                <li><Link href="#" className="hover:underline">Virtual Healthcare Staffing</Link></li>
+              </ul>
+            </div>
           </div>
 
           {/* Company */}

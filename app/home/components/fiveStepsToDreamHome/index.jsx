@@ -93,7 +93,7 @@ export default function FiveStepsToDreamHome() {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            <span style={{ color: ORANGE }}>How Leo Medhub Brings Your Vision to Life</span>
+            <span style={{ color: ORANGE }}>How <span className="bg-gradient-to-r from-red-600 to-blue-700 bg-clip-text text-transparent">Leo Medhub</span> Brings Your Vision to Life</span>
           </h2>
           <p className="mt-3 text-lg md:text-xl text-gray-600">
             A streamlined{" "}

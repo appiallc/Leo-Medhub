@@ -48,7 +48,7 @@ export default function ImpactSection() {
         <div className="grid sm:grid-cols-2 gap-10 text-black">
           <div>
             <h3 className="text-6xl font-bold text-red-700">
-              {inView ? <CountUp end={2300} duration={2} /> : "0"}+
+              {inView ? <CountUp end={15} duration={2} /> : "0"}+
             </h3>
             <p className="mt-2">
               <span className="font-semibold">Healthcare providers</span> rely on our
@@ -58,7 +58,7 @@ export default function ImpactSection() {
 
           <div>
             <h3 className="text-6xl font-bold text-red-700">
-              {inView ? <CountUp end={1400} duration={2} /> : "0"}+
+              {inView ? <CountUp end={22} duration={2} /> : "0"}+
             </h3>
             <p className="mt-2">
               <span className="font-semibold">Dedicated professionals</span> delivering
@@ -68,7 +68,7 @@ export default function ImpactSection() {
 
           <div>
             <h3 className="text-6xl font-bold text-red-700">
-              {inView ? <CountUp end={40} duration={2} /> : "0"}+
+              {inView ? <CountUp end={4} duration={2} /> : "0"}+
             </h3>
             <p className="mt-2">
               <span className="font-semibold">U.S. states</span> where practices
@@ -78,7 +78,7 @@ export default function ImpactSection() {
 
           <div>
             <h3 className="text-6xl font-bold text-red-700">
-              {inView ? <CountUp end={60} duration={2} /> : "0"}+
+              {inView ? <CountUp end={6} duration={2} /> : "0"}+
             </h3>
             <p className="mt-2">
               <span className="font-semibold">EHR and PM systems</span> supported
