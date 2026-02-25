@@ -35,9 +35,9 @@ export default function LogosStrip() {
     <section className="w-full py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-6">
-          <p className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-gray-500">
-            Trusted by leading practices
-          </p>
+          <span className="bg-gradient-to-r from-red-600 to-blue-700 bg-clip-text text-transparent text-base md:text-lg lg:text-xl font-semibold">
+            We are compatible with all existing software platforms
+          </span>
         </div>
 
         <div className="relative overflow-hidden">
@@ -49,14 +49,14 @@ export default function LogosStrip() {
             {loopedLogos.map((logo, index) => (
               <div
                 key={`${logo.src}-${index}`}
-                className="flex items-center justify-center min-w-[120px] md:min-w-[160px] h-16 md:h-20 grayscale hover:grayscale-0 transition"
+                className="flex items-center justify-center min-w-[140px] md:min-w-[200px] h-20 md:h-24 grayscale hover:grayscale-0 transition"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={160}
-                  height={80}
-                  className="h-10 md:h-12 w-auto object-contain"
+                  width={220}
+                  height={110}
+                  className="h-12 md:h-16 w-auto object-contain"
                 />
               </div>
             ))}

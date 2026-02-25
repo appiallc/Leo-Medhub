@@ -50,7 +50,7 @@ body {
 /* Logo strip auto-scroll */
 .logo-marquee {
   width: max-content;
-  animation: logo-scroll 30s linear infinite;
+  animation: logo-scroll 50s linear infinite;
 }
 
 @keyframes logo-scroll {
