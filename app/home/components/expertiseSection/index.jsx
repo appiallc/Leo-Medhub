@@ -29,14 +29,14 @@ export default function ExpertiseSection() {
           </span>
 
             <p className="lg:text-4xl md:text-3xl text-2xl font-bold text-gray-900 leading-tight">
-              Specialized Solutions for{" "}
-              <span className="bg-gradient-to-r from-red-600 to-blue-700 bg-clip-text text-transparent">60+ Specialties and EHRs</span>
+            Solutions for several{" "}
+              <span className="bg-gradient-to-r from-red-600 to-blue-700 bg-clip-text text-transparent">Specialities and EHRs</span>
             </p>
 
             <p className="text-gray-600 text-base md:text-lg">
               Expert medical billing and healthcare staffing solutions
               across{" "}
-              <span className="text-[#293675] underline">60+ clinical specialties</span>.
+              <span className="text-[#293675] underline">12+ clinical specialties</span>.
             </p>
 
             <ul className="space-y-3 text-gray-700">

@@ -45,8 +45,7 @@ const steps = [
 function StepCard({ item, isLeft }) {
   return (
     <div
-      className={`w-full flex rounded-2xl overflow-hidden shadow-lg ${isLeft ? "flex-row" : "flex-row-reverse"}`}
-      style={{ backgroundColor: ORANGE }}
+      className={`w-full flex rounded-2xl overflow-hidden shadow-lg bg-gradient-to-r from-red-600 to-blue-700 ${isLeft ? "flex-row" : "flex-row-reverse"}`}
     >
       <div className="flex-1 p-6 md:p-8 flex flex-col justify-center min-w-0">
         <h3 className="text-xl md:text-2xl font-bold text-white">{item.title}</h3>

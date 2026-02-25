@@ -27,20 +27,21 @@ export default function Header() {
 
   const submenuContent = {
     healthcare: [
-  
+      "Virtual Healthcare Assistant",
       "Medical Records",
-      "Medical Coding",
-      "Medical Biller",
-      
+      "New Patient Coordinator",
+      "Prior Authorizations",
+      "Phone Receptionist",
       "Fax Management",
-   
+      "Prescription Coordinator",
+      "Referral Management",
     ],
     billing: [
-     
+      "Eligibility & Benefits",
       "Credentialing",
-
+      "Medical Coding",
       "Revenue Cycle Management",
-      "Medical Biller",
+      "Remote Medical Biller",
     ],
   };
 
@@ -90,7 +91,7 @@ export default function Header() {
                 onMouseEnter: handleOpen,
                 onMouseLeave: handleClose,
                 sx: {
-                  width: 600,
+                  width: 800,
                   p: "24px",
                   borderRadius: "12px",
                   mt: 2,
@@ -132,8 +133,8 @@ export default function Header() {
                 </Box>
 
                 {/* RIGHT */}
-                <Box sx={{ width: "50%", display: "flex", pl: 3 }}>
-                  {[0].map((col) => (
+                <Box sx={{ width: "55%", display: "flex", gap: 2, pl: 3 }}>
+                  {[0, 1].map((col) => (
                     <Box key={col} sx={{ flex: 1 }}>
                       {submenuContent[activeMenu]
                         .slice(
