@@ -5,10 +5,27 @@ import Image from "next/image";
 const logos = [
   // 👇 Add/remove logos here. Put image files in /public/logos and update the src paths.
   { src: "/logos/Allscripts-Logo.webp", alt: "Allscripts Logo" },
-  { src: "/logos/logo2.png", alt: "Partner Logo 2" },
-  { src: "/logos/logo3.png", alt: "Partner Logo 3" },
-  { src: "/logos/logo4.png", alt: "Partner Logo 4" },
-  { src: "/logos/logo5.png", alt: "Partner Logo 5" },
+  { src: "/logos/Athenahealth-Logo.webp", alt: "Athenahealth Logo" },
+  { src: "/logos/BestRx-Logo.webp", alt: "BestRx Logo" },
+  { src: "/logos/CareCloud-Logo.webp", alt: "CareCloud Logo" },
+  {
+    src: "/logos/Digital-Business-Solutions-Inc-Logo.webp",
+    alt: "Digital Business Solutions Inc Logo",
+  },
+  { src: "/logos/eClinicalWorks-Logo.webp", alt: "eClinicalWorks Logo" },
+  { src: "/logos/Epic-Logo.webp", alt: "Epic Logo" },
+  { src: "/logos/General-Electric-Logo.webp", alt: "General Electric Logo" },
+  { src: "/logos/IMS-Logo.webp", alt: "IMS Logo" },
+  { src: "/logos/IPS-Elite-Logo.webp", alt: "IPS Elite Logo" },
+  { src: "/logos/Kareo-Logo.webp", alt: "Kareo Logo" },
+  {
+    src: "/logos/Micro-Merchant-Systems-Logo.webp",
+    alt: "Micro Merchant Systems Logo",
+  },
+  { src: "/logos/PioneerRx-Logo.webp", alt: "PioneerRx Logo" },
+  { src: "/logos/Rx30-Logo.webp", alt: "Rx30 Logo" },
+  { src: "/logos/RxBLU-Logo.webp", alt: "RxBLU Logo" },
+  { src: "/logos/SuiteRx-Logo.webp", alt: "SuiteRx Logo" },
 ];
 
 export default function LogosStrip() {
