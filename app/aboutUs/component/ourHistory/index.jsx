@@ -21,10 +21,7 @@ export default function OurHistory() {
 
         {/* Description */}
         <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg lg:text-xl">
-          Leo Medhub stands apart as a healthcare-focused partner—not merely
-          an outsourcing vendor. Established by pharmacists, physicians, and
-          experienced healthcare leaders who have operated their own practices,
-          we bring firsthand understanding of the challenges providers face every day.
+        Leo Medhub stands apart as a healthcare-focused partner, not merely an outsourcing vendor. Founded by experienced medical billers with deep industry expertise, our team understands the complexities of revenue cycle management and the everyday challenges healthcare providers face.
         </p>
       </div>
     </section>

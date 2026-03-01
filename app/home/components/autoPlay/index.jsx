@@ -61,8 +61,8 @@ export default function AutoHero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/40 to-black/45"></div>
 
 
-      {/* CONTENT */}
-      <div className="relative z-10 max-w-4xl mx-8 px-6 h-full flex flex-col justify-center">
+      {/* CONTENT - bottom left */}
+      <div className="relative z-10 max-w-4xl mx-8 px-6 h-full flex flex-col justify-end pb-12 md:pb-16">
         <h1 className="text-4xl md:text-6xl text-[#293675] font-extrabold leading-tight">
           {slide.title1}{" "}
           <span className="text-red-700">{slide.title2}</span>{" "}

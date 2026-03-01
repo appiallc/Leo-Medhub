@@ -19,7 +19,7 @@ export default function CompanyStats() {
                 "Over 60 specialties",
                 "Over 60 EHR Software systems experience"
               ].map((item, index) => (
-                <li className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-4">
                   <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-red-600 text-white">
                     <FaCheck size={12} />
                   </span>
@@ -42,7 +42,7 @@ export default function CompanyStats() {
                 "Serving over 6,000 providers",
                 "30 companies in healthcare including multispecialty clinics, pharmacies, IPA’s and much more!"
               ].map((item, index) => (
-                <li className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-4">
                   <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-red-600 text-white">
                     <FaCheck size={12} />
                   </span>
