@@ -58,8 +58,8 @@ export default function ProvenApproach() {
             <Star className="w-10 h-10 text-red-700 mb-3" />
             <h3 className="text-2xl font-semibold text-red-700">Expertise</h3>
             <p className="mt-2 text-gray-700">
-              Leo Medhub brings over 15 years of industry expertise, providing
-              trusted support to 500+ healthcare providers across 60+ EHR and practice management systems.
+              Leo Medhub brings over years of industry expertise, providing
+              trusted support to 15+ healthcare providers in several speciality across EHR and practice management systems.
             </p>
           </div>
 
