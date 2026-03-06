@@ -68,7 +68,14 @@ export default function Footer() {
                 <li><Link href="#" className="hover:underline">Medical Biller</Link></li>
                 <li><Link href="#" className="hover:underline">Medical Coding</Link></li>
                 <li><Link href="#" className="hover:underline">Medical Records</Link></li>
-                <li><Link href="#" className="hover:underline">Virtual Healthcare Assistant</Link></li>
+                <li>
+                  <Link
+                    href="/services/virtualHealthcareAssistant"
+                    className="hover:underline"
+                  >
+                    Virtual Healthcare Assistant
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-2 text-sm">
                 <li><Link href="#" className="hover:underline">New Patient Coordinator</Link></li>

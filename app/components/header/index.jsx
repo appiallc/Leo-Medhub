@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Popover from "@mui/material/Popover";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -43,6 +44,22 @@ export default function Header() {
       "Revenue Cycle Management",
       "Remote Medical Biller",
     ],
+  };
+
+  const serviceToPath = {
+    "Virtual Healthcare Assistant": "/services/virtualHealthcareAssistant",
+    "Medical Records": "/services/medicalRecords",
+    "New Patient Coordinator": "/services/newPatientCoordinator",
+    "Prior Authorizations": "/services/priorAuthorizations",
+    "Phone Receptionist": "/services/phoneReceptionist",
+    "Fax Management": "/services/faxManagement",
+    "Prescription Coordinator": "/services/prescriptionCoordinator",
+    "Referral Management": "/services/referralManagement",
+    "Eligibility & Benefits": "/services/eligibilityAndBenefits",
+    "Credentialing": "/services/credentialing",
+    "Medical Coding": "/services/medicalCoding",
+    "Revenue Cycle Management": "/services/revenueCycleManagement",
+    "Remote Medical Biller": "/services/remoteMedicalBiller",
   };
 
   return (
@@ -150,27 +167,14 @@ export default function Header() {
                             : undefined
                         )
                         .map((item) => (
-                          <Typography
-                            key={item}
-                            component="a"
-                            href="#"
-                            sx={{
-                              display: "block",
-                              fontSize: "15px",
-                              color: "#334155",
-                              textDecoration: "none",
-                              py: "7px",
-                              mx: "5px",
-                              pl: "10px",
-                              borderRadius: "6px",
-                              "&:hover": {
-                                color: "#fff",
-                                background: "#d63227",
-                              },
-                            }}
-                          >
-                            {item}
-                          </Typography>
+                          <Box key={item} sx={{ mx: "5px" }}>
+                            <Link
+                              href={serviceToPath[item] || "#"}
+                              className="block text-[15px] text-slate-700 no-underline py-[7px] pl-[10px] rounded-md hover:text-white hover:bg-[#d63227]"
+                            >
+                              {item}
+                            </Link>
+                          </Box>
                         ))}
                     </Box>
                   ))}
@@ -237,13 +241,13 @@ export default function Header() {
               {openSection === menu && (
                 <div className="pl-4 py-2 space-y-1">
                   {submenuContent[menu].map((sub) => (
-                    <a
+                    <Link
                       key={sub}
-                      href="#"
+                      href={serviceToPath[sub] || "#"}
                       className="block text-gray-600 py-1 text-[15px]"
                     >
                       {sub}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
