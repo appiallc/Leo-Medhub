@@ -116,12 +116,12 @@ export default function SmartChoiceSection({
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 85vw, (max-width: 1200px) 30vw, 22vw"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 h-[140px] p-4 sm:p-5 z-20 overflow-hidden flex flex-col">
+                    <div className="absolute bottom-0 left-0 right-0 h-[160px] p-4 sm:p-5 z-20 overflow-hidden flex flex-col">
                       <div className="mb-2 w-12 h-1 flex-shrink-0 bg-blue-500 rounded-full group-hover:w-20 transition-all duration-500" />
                       <h3 className="text-lg sm:text-xl font-bold text-white mb-1 line-clamp-2 overflow-hidden break-words">
                         {card.title}
                       </h3>
-                      <p className="text-slate-200 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-3 overflow-hidden flex-1 min-h-0 break-words">
+                      <p className="text-slate-200 text-sm leading-relaxed line-clamp-3 overflow-hidden flex-1 min-h-0 break-words">
                         {card.description}
                       </p>
                     </div>
