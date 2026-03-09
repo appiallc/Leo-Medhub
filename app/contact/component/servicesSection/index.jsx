@@ -63,6 +63,7 @@ export default function ServicesSection() {
     "Medical Records": "/services/medicalRecords",
     "New Patient Coordinator": "/services/newPatientCoordinator",
     "Fax Management": "/services/faxManagement",
+    "Live Scribe And Transcription Services": "/services/virtualHealthcareAssistant",
   };
 
   return (
