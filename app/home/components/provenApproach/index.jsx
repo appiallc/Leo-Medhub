@@ -5,7 +5,9 @@ import { Handshake, User, Star, MessageSquare } from "lucide-react";
 
 export default function ProvenApproach() {
   return (
-    <section className="w-full px-6 md:px-12 lg:px-24 py-16 bg-white">
+    <section 
+    id="why-us"
+    className="w-full px-6 md:px-12 lg:px-24 py-16 bg-white">
       {/* Title Section */}
       <div className="max-w-7xl mx-auto mb-12">
         <span className="inline-block border border-[#293675] text-[#293675]  px-4 py-1 rounded-full font-medium mb-4">

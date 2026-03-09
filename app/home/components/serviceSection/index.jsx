@@ -34,7 +34,9 @@ const data = [
 
 export default function ServicesSection() {
   return (
-    <section className="w-full py-16 px-4 md:px-10 lg:px-20 bg-white">
+    <section
+      className="w-full py-16 px-4 md:px-10 lg:px-20 bg-white"
+    >
       {/* Heading */}
       <div className="mb-10">
         <span className="inline-block border border-[#293675] text-[#293675] px-4 py-1 rounded-full font-medium mb-4">

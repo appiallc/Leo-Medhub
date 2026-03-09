@@ -60,13 +60,8 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2">
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/services" className="hover:underline">
-                    Medical Billing Services
-                  </Link>
-                </li>
-                <li>
+            <ul className="space-y-2 text-sm">
+              <li>
                   <Link href="/services/credentialing" className="hover:underline">
                     Credentialing
                   </Link>
@@ -160,8 +155,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="hover:underline">
-                  Testimonials
+                <Link href="/#why-us" className="hover:underline">
+                  Why Us
                 </Link>
               </li>
               <li>

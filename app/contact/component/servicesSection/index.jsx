@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
 
 const servicesData = {
@@ -48,6 +49,21 @@ export default function ServicesSection() {
   const [activeTab, setActiveTab] = useState("billing");
 
   const service = servicesData[activeTab];
+
+  const serviceLinkMap = {
+    "Eligibility and Benefits Verification": "/services/eligibilityAndBenefits",
+    "Revenue Cycle Management": "/services/revenueCycleManagement",
+    "Medical Billing": "/services/remoteMedicalBiller",
+    "Medical Coding": "/services/medicalCoding",
+    Credentialing: "/services/credentialing",
+    "Prior Authorizations": "/services/priorAuthorizations",
+    "Referral Processing": "/services/referralManagement",
+    "Prescription Coordinator": "/services/prescriptionCoordinator",
+    "Phone Receptionist": "/services/phoneReceptionist",
+    "Medical Records": "/services/medicalRecords",
+    "New Patient Coordinator": "/services/newPatientCoordinator",
+    "Fax Management": "/services/faxManagement",
+  };
 
   return (
     <section className="py-16 px-6 bg-gray-50">
@@ -97,15 +113,33 @@ export default function ServicesSection() {
   <p className="text-gray-600 mb-4">{service.description}</p>
 
   <ul className="divide-y divide-gray-200">
-    {service.items.map((item) => (
-      <li
-        key={item}
-        className="flex justify-between items-center py-3 cursor-pointer hover:text-red-600 transition group"
-      >
-        {item}
-        <HiArrowRight className="transition-transform duration-300 group-hover:rotate-0 group-hover:-translate-y-1" size={20}/>
-      </li>
-    ))}
+    {service.items.map((item) => {
+      const href = serviceLinkMap[item];
+      const content = (
+        <>
+          <span>{item}</span>
+          <HiArrowRight
+            className="transition-transform duration-300 group-hover:translate-x-1"
+            size={20}
+          />
+        </>
+      );
+
+      return (
+        <li
+          key={item}
+          className="group flex justify-between items-center py-3 text-gray-800 hover:text-red-600 transition"
+        >
+          {href ? (
+            <Link href={href} className="flex-1 flex justify-between items-center gap-2">
+              {content}
+            </Link>
+          ) : (
+            content
+          )}
+        </li>
+      );
+    })}
   </ul>
 </div>
 

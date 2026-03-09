@@ -186,8 +186,8 @@ export default function Header() {
           <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="/aboutUs">
             About Us
           </a>
-          <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="#">
-            Testimonials
+          <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="/#why-us">
+            Why Us
           </a>
           <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="#">
             Blog
@@ -245,6 +245,10 @@ export default function Header() {
                       key={sub}
                       href={serviceToPath[sub] || "#"}
                       className="block text-gray-600 py-1 text-[15px]"
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setOpenSection(null);
+                      }}
                     >
                       {sub}
                     </Link>
@@ -254,13 +258,25 @@ export default function Header() {
             </div>
           ))}
 
-          <a className="block py-2 text-gray-800 font-medium" href="/aboutUs">
+          <a
+            className="block py-2 text-gray-800 font-medium"
+            href="/aboutUs"
+            onClick={() => setMobileOpen(false)}
+          >
             About Us
           </a>
-          <a className="block py-2 text-gray-800 font-medium" href="#">
-            Testimonials
+          <a
+            className="block py-2 text-gray-800 font-medium"
+            href="/#why-us"
+            onClick={() => setMobileOpen(false)}
+          >
+            Why Us
           </a>
-          <a className="block py-2 text-gray-800 font-medium" href="#">
+          <a
+            className="block py-2 text-gray-800 font-medium"
+            href="#"
+            onClick={() => setMobileOpen(false)}
+          >
             Blog
           </a>
 
