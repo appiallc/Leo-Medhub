@@ -41,24 +41,54 @@ export default function ContactSection() {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const validationErrors = validate();
+
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-    } else {
-      setErrors({});
-      console.log("Form Submitted:", formData);
-      alert("Form submitted successfully!");
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        company: "",
-        interest: "",
-        hearAbout: "",
-        message: "",
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/mrningstr50@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: "New Contact Form Submission",
+          _template: "table",
+          FullName: formData.fullName,
+          Email: formData.email,
+          Phone: formData.phone,
+          Company: formData.company,
+          Interest: formData.interest,
+          HearAbout: formData.hearAbout,
+          Message: formData.message,
+        }),
       });
+
+      if (response.ok) {
+        alert("Form submitted successfully!");
+
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          company: "",
+          interest: "",
+          hearAbout: "",
+          message: "",
+        });
+      } else {
+        alert("Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error submitting form");
     }
   };
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function AutoHero() {
@@ -73,10 +74,13 @@ export default function AutoHero() {
           {slide.desc}
         </p>
 
-        <button className="mt-6 bg-[#293675] text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 w-fit shadow-md">
+        <Link
+          href="/contact"
+          className="mt-6 bg-[#293675] text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 w-fit shadow-md hover:bg-[#1f2858] transition"
+        >
           Schedule a Free Consultation
           <ArrowRight size={18} />
-        </button>
+        </Link>
       </div>
     </section>
   );
