@@ -132,7 +132,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:underline">
+                  <Link href="/#services" className="hover:underline">
                     Virtual Healthcare Staffing
                   </Link>
                 </li>
@@ -144,8 +144,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/services" className="hover:underline">
+                <li>
+                <Link href="/#services" className="hover:underline">
                   Services
                 </Link>
               </li>
@@ -167,6 +167,18 @@ export default function Footer() {
             </ul>
           </div>
 
+        </div>
+
+        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-between items-center text-sm text-white/85">
+          <p className="text-center sm:text-left">© 2026 Leo Medhub. All rights reserved.</p>
+          <div className="flex flex-wrap gap-6 justify-center">
+            <Link href="/terms" className="hover:text-white hover:underline">
+              Terms &amp; Conditions
+            </Link>
+            <Link href="/privacy" className="hover:text-white hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

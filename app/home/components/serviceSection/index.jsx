@@ -35,7 +35,8 @@ const data = [
 export default function ServicesSection() {
   return (
     <section
-      className="w-full py-16 px-4 md:px-10 lg:px-20 bg-white"
+      id="services"
+      className="w-full py-16 px-4 md:px-10 lg:px-20 bg-white scroll-mt-24"
     >
       {/* Heading */}
       <div className="mb-10">
