@@ -42,7 +42,7 @@ export default function Footer() {
         onClick={handleCopy}
         className="text-sm cursor-pointer hover:underline inline-block"
       >
-        +1 (705) 978-5045
+        +1 (205) 319-9760
       </p>
     </Tooltip>
     <div>

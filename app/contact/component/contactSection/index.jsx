@@ -125,7 +125,7 @@ export default function ContactSection() {
                    onClick={handleCopy}
                    className="font-semibold cursor-pointer hover:underline inline-block [#293675]"
                  >
-                   +1 (705) 978-5045
+                   +1 (205) 319-9760
                  </p>
                </Tooltip>
           </div>
