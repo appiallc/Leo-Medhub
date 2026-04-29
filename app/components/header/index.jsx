@@ -189,9 +189,12 @@ export default function Header() {
           <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="/#why-us">
             Why Us
           </a>
-          <a className="font-medium text-gray-800 text-[18px] hover:text-red-700" href="#">
+          <Link
+            className="font-medium text-gray-800 text-[18px] hover:text-red-700"
+            href="/blog"
+          >
             Blog
-          </a>
+          </Link>
         </nav>
 
         {/* DESKTOP CTA */}
@@ -272,13 +275,13 @@ export default function Header() {
           >
             Why Us
           </a>
-          <a
+          <Link
             className="block py-2 text-gray-800 font-medium"
-            href="#"
+            href="/blog"
             onClick={() => setMobileOpen(false)}
           >
             Blog
-          </a>
+          </Link>
 
           <a
             href="/contact"

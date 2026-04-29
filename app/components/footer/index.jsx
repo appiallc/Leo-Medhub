@@ -78,7 +78,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/services/remoteMedicalBiller" className="hover:underline">
-                    Medical Biller
+                    Remote Medical Biller
                   </Link>
                 </li>
                 <li>
