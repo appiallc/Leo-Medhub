@@ -18,6 +18,12 @@ package-lock.json
 /.next/
 /out/
 
+# sanity
+.sanity/
+sanity/.sanity/
+sanity/dist/
+sanity/node_modules/
+
 # production
 /build
 

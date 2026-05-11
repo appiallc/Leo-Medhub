@@ -1,0 +1,23 @@
+{
+  "name": "leo-medhub-sanity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "start": "sanity start",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "@sanity/vision": "^4.6.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sanity": "^4.7.0",
+    "styled-components": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

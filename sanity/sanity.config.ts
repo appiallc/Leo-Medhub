@@ -1,24 +1,19 @@
-'use client'
-
-/**
- * This configuration is used to for the Sanity Studio that’s mounted on the `\app\sanity\[[...tool]]\page.tsx` route
- */
-
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
+import type {SchemaTypeDefinition} from 'sanity'
 import {structureTool} from 'sanity/structure'
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import {apiVersion, dataset, projectId} from './sanity/env'
-import {schemaTypes} from './sanity/schemas'
+import {apiVersion, dataset, projectId} from './env'
+import {schemaTypes} from './schemas'
 import {structure} from './structure'
 
 export default defineConfig({
-  basePath: '/sanity',
+  basePath: '/',
   projectId,
   dataset,
   schema: {
-    types: schemaTypes,
+    types: schemaTypes as SchemaTypeDefinition[],
   },
   plugins: [
     structureTool({structure}),
